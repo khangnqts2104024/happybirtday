@@ -1,0 +1,133 @@
+@-webkit-keyframes img-rotate {
+    0%{
+        transform: rotateY(0deg)
+    }
+    100% {
+      transform: rotateY(3600deg) ;
+    }
+  }
+  
+  @keyframes img-rotate {
+    0%{
+        transform: rotateY(0deg)
+    }
+    100% {
+      transform: rotateY(3600deg) ;
+    }
+  }
+
+  @-webkit-keyframes happy {
+    0%{
+      top: 0;
+  }
+  100% {
+    top:90%; 
+  }
+  }
+  
+  @keyframes happy {
+    0%{
+      top: 0;
+  }
+  100% {
+    top:90%;
+  }
+  }
+
+  /* @-webkit-keyframes show-img {
+    0%{
+        transform: scale(0); 
+    }
+    100% {
+       tranform: scale(1) translateY(20rem);
+    }
+  }
+  
+  @keyframes show-img {
+    0%{
+        transform: scale(0);
+    }
+    100% {
+      transform:scale(1) translateY(20rem);
+    }
+  } */
+  .image-container {
+      /* display: none; */
+    position: absolute;
+    top: -25rem;
+    /* width: 10rem; */
+    /* height:12rem; */
+    margin: 10px auto;
+    /* perspective: 800px; */
+    /* animation: show-img 2s  ; */
+    /* cursor: pointer; */
+    
+  }
+  .single-rb img {
+    /* width: 18rem; */
+    max-width: 20rem;
+    height:20rem;
+  }
+
+  .single-rb div{
+    border: solid rgb(243, 220, 220);
+    max-width: 20rem;
+    height:20rem;
+    position: absolute;
+
+
+  }
+
+  .single-rb {
+    transform-style: preserve-3d;
+    width: 20rem;
+    -webkit-animation: img-rotate 120s  linear infinite;
+    animation: img-rotate 120s  linear infinite;
+  }
+  .single-rb .img-1{
+      transform:  translateZ(400px) ;
+
+  }
+  .single-rb .img-2{
+    transform: rotateY(-45deg) translateX(-150px)  translateZ(300px)  ;
+    transform-origin: left;
+}
+.single-rb .img-3{
+    transform: rotateY(-90deg)  translateX(-300px) translateZ(300px) ;
+    transform-origin: left;
+}
+.single-rb .img-4{
+    transform: rotateY(-135deg) translateX(-300px) translateZ(450px) ;
+    transform-origin: left;
+}
+.single-rb .img-5{
+    transform: rotateY(180deg)  translateZ(450px)  ;
+/* transform-origin: right; */
+}
+.single-rb .img-6{
+    transform: rotateY(135deg) translateX(150px) translateZ(300px)  ;
+transform-origin: right;
+}
+.single-rb .img-7{
+    transform: rotateY(90deg) translateX(100px) translateZ(250px) ;
+    transform-origin: right;
+}
+.single-rb .img-8{
+    transform: rotateY(45deg) translateZ(300px) ;
+    transform-origin: right;
+}
+.happy{
+position: absolute;
+color: rgb(9, 121, 9);
+left: 40%;
+animation: happy 3s;
+top:90%;
+font-family:"Brush Script MT";
+font-weight: 400;
+font-size: 40px;
+
+}
+.happy.none{
+ display: none;
+  }
+  
